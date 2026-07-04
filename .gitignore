@@ -1,6 +1,9 @@
-node_modules/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Data directory (do not track user local data)
+data/
+
+# dotenv (never commit real secrets)
 .env
-dist/
-coverage/
-*.log
-.DS_Store
