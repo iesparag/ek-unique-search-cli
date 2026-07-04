@@ -1,0 +1,10 @@
+{
+  "name": "ek-unique-search-cli",
+  "version": "0.1.0",
+  "description": "CLI for unique item creation and search (python, pytest)",
+  "scripts": {
+    "test": "echo 'No JavaScript/Node tests. Use: pytest' && exit 0"
+  },
+  "author": "",
+  "license": "MIT"
+}
