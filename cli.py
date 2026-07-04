@@ -42,8 +42,9 @@ def cmd_create(args):
             print(f"Error: Item with name '{name}' already exists.")
             sys.exit(1)
     else:
-        # Generate a unique default name
-        base = "item-" + datetime.utcnow().strftime('%Y%m%d-%H%M%S')
+        # Generate a unique default name like 'item-<shortuuid>'
+        short_uuid = generate_uuid().split("-")[0]
+        base = f"item-{short_uuid}"
         name = base
         disambig = 0
         while any(it.name.lower() == name.lower() for it in items):
